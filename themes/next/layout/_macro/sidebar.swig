@@ -1,4 +1,5 @@
 {% macro render(is_post) %}
+
   <div class="sidebar-toggle">
     <div class="sidebar-toggle-line-wrap">
       <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
@@ -11,6 +12,7 @@
     {% if theme.sidebar.onmobile %}
       <div id="sidebar-dimmer"></div>
     {% endif %}
+
     <div class="sidebar-inner">
 
       {% set display_toc = is_post and theme.toc.enable or is_page and theme.toc.enable %}
@@ -92,8 +94,6 @@
             </div>
           {% endif %}
 
-          <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=519817958&auto=1&height=66"></iframe>
-
           <div class="links-of-author motion-element">
             {% if theme.social %}
               {% for name, link in theme.social %}
@@ -174,4 +174,7 @@
     </div>
 
   </aside>
+
+  <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=34341360&auto=1&height=32" style="display:none"></iframe>
+
 {% endmacro %}
